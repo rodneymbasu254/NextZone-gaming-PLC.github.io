@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <a href="index.html">Home</a>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <title>Discover</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Discover</h1>
+      </div>
+    </div>
+  </header>
+  
+    <body onload="myFunction()" style="margin:0;">
+      <div id="loader"></div>
+      <div style="display:none;" id="myDiv" class="animate-bottom">
+        <h2>Retro</h2>
+        <p>3D shooting game</p>
+      </div>
+  <script>
+    var myVar;
+    function myFunction(){
+      myVar= setTimeout(showPage,3000);
+    }
+    function showPage(){
+      document.getElementById("loader").style.display="none";
+      document.getElementById("myDiv").style.display="block";
+    }
+  </script>
+
+    </body>
+  
+<p id="GFG_UP">
+</p>
+<button onClick="GFG_Fun()">
+    send
+</button>
+<p id="GFG_DOWN">
+</p>
+<script>
+    var up = document.getElementById('GFG_UP');
+    var down = document.getElementById('GFG_DOWN');
+    up.innerHTML =
+    'Click on the button to send code';
+      
+    function randomStr(len, arr) {
+        var ans = '';
+        for (var i = len; i > 0; i--) {
+            ans +=
+            arr[(Math.floor(Math.random() * arr.length))];
+        }
+        return ans;
+    }
+      
+    function GFG_Fun() {
+        down.innerHTML = randomStr(20, '12345abcde');
+    }
+</script>
+</body>
+</html>
