@@ -50,7 +50,7 @@ function removeJump() {
   character.style.backgroundImage = "url(" + animationImages[2] + ")";
 }
 
-var onJump = new Audio("footstep_grass_004.mp3");
+var onJump = new Audio("Audio/footstep_grass_004.mp3");
 function jump() {
   if (character.classList == "animate") {
     return;
@@ -72,7 +72,7 @@ buttonContainer.addEventListener("click", function(event) {
 
 var block = document.getElementById("block");
 
-var onCollide = new Audio("impactWood_heavy_003.ogg");
+var onCollide = new Audio("Audio/impactWood_heavy_003.ogg");
 function checkDead() {
   let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
   let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -134,7 +134,7 @@ function retry() {
 }
 
 function Redirect() {
-  window.location = "gameOver.html";
+  window.location = "html/gameOver.html";
 }
 
 function gameOver() {
