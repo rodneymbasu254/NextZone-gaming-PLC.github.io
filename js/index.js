@@ -49,7 +49,7 @@ function restart() {
 var startButton = document.getElementById("begin");
 var startSound = new Audio("Audio/click5.ogg");
 function redirect() {
-  window.location = "game.html";
+  window.location = "html/game.html";
 }
 var progressBar = document.getElementById("progressBar");
 
