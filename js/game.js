@@ -3,7 +3,7 @@ var startButton = document.getElementById('start');
 
 var animationRunning = false;
 
-var onPlay = new Audio("Audio/mixkit-cinematic-horror-heartbeat-transition-489.wav");
+var onPlay = new Audio("/Audio/mixkit-cinematic-horror-heartbeat-transition-489.wav");
 
 function startGame() {
   onPlay.play();
@@ -35,9 +35,9 @@ buttonContainer.addEventListener("click", function(event) {
 });
 
 var animationImages = [
-  "img/character_zombie_attack1.png",
-  "img/character_zombie_attack2.png",
-  "img/character_zombie_attackKick.png",
+  "/img/character_zombie_attack1.png",
+  "/img/character_zombie_attack2.png",
+  "/img/character_zombie_attackKick.png",
 ];
 var character = document.getElementById("character");
 var currentImageIndex = 0;
@@ -50,7 +50,7 @@ function removeJump() {
   character.style.backgroundImage = "url(" + animationImages[2] + ")";
 }
 
-var onJump = new Audio("Audio/footstep_grass_004.mp3");
+var onJump = new Audio("/Audio/footstep_grass_004.mp3");
 function jump() {
   if (character.classList == "animate") {
     return;
@@ -72,7 +72,7 @@ buttonContainer.addEventListener("click", function(event) {
 
 var block = document.getElementById("block");
 
-var onCollide = new Audio("Audio/impactWood_heavy_003.ogg");
+var onCollide = new Audio("/Audio/impactWood_heavy_003.ogg");
 function checkDead() {
   let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
   let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -87,7 +87,7 @@ function checkDead() {
 
 setInterval(checkDead, 10);
 
-var images = ["img/bush1.png", "img/treeLong.png", "img/tree.png", "img/cactus1.png"];
+var images = ["/img/bush1.png", "/img/treeLong.png", "/img/tree.png", "/img/cactus1.png"];
 
 function getRandomImage() {
   var randomImage = images[Math.floor(Math.random() * images.length)];
@@ -134,7 +134,7 @@ function retry() {
 }
 
 function Redirect() {
-  window.location = "html/gameOver.html";
+  window.location = "/html/gameOver.html";
 }
 
 function gameOver() {
