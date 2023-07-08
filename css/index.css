@@ -27,6 +27,8 @@
   top: 50px;
   left: 50px;
   transform: translate(500%, -50%);
+  border-color: cyan;
+  color: red;
 }
 
 #character{
