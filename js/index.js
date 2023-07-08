@@ -1,9 +1,9 @@
 var images = [
-  "img/backgroundColorGrass.png",
-  "img/backgroundColorForest.png",
-  "img/backgroundColorFall.png",
-  "img/backgroundColorDesert.png",
-  "img/backgroundDesert.png",
+  "/img/backgroundColorGrass.png",
+  "/img/backgroundColorForest.png",
+  "/img/backgroundColorFall.png",
+  "/img/backgroundColorDesert.png",
+  "/img/backgroundDesert.png",
 ];
 
 var index = 0;
@@ -47,9 +47,9 @@ function restart() {
 }
 
 var startButton = document.getElementById("begin");
-var startSound = new Audio("Audio/click5.ogg");
+var startSound = new Audio("/Audio/click5.ogg");
 function redirect() {
-  window.location = "html/game.html";
+  window.location = "/html/game.html";
 }
 var progressBar = document.getElementById("progressBar");
 
